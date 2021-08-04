@@ -21,6 +21,9 @@
         <div class="btn btn--green">
           green button
         </div>
+        <div data-content="hello world" class="hover:before:content-[attr(data-content)] before:inline">
+          paragrah
+        </div>
       </div>
     </div>
   </div>
