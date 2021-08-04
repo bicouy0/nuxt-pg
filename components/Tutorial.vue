@@ -15,6 +15,12 @@
         <p class="mt-4 pt-4 text-gray-800 border-t border-dashed">
           To get started, remove <code class="bg-gray-100 text-sm p-1 rounded border">components/Tutorial.vue</code> and start coding in <code class="bg-gray-100 text-sm p-1 rounded border">pages/index.vue</code>. Have fun!
         </p>
+        <div class="btn">
+          button
+        </div>
+        <div class="btn btn--green">
+          green button
+        </div>
       </div>
     </div>
   </div>
@@ -26,4 +32,13 @@
     @apply text-green-700 bg-green-100 hover:underline;
   }
 }
+
+.btn {
+  @apply py-2 px-4 font-semibold rounded-lg shadow-md cursor-pointer;
+
+  &--green {
+    @apply text-white bg-green-500 hover:bg-green-700;
+  }
+}
+
 </style>
