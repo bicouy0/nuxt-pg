@@ -1,4 +1,4 @@
-# v2
+# nuxt-pg
 
 ## Build Setup
 
