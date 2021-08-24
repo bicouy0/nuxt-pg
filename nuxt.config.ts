@@ -1,4 +1,6 @@
-export default {
+import { NuxtConfig } from '@nuxt/types'
+
+const config: NuxtConfig = {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'nuxt playground',
@@ -67,3 +69,5 @@ export default {
     cssPath: '~/assets/styles/tailwind.scss'
   }
 }
+
+export default config

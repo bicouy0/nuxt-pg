@@ -2,8 +2,9 @@ import {
   TInput,
   TButton, TToggle
 } from 'vue-tailwind/dist/components'
+import LibrarySettings from 'vue-tailwind/dist/types/LibrarySettings'
 
-export const config = {
+export const config: LibrarySettings = {
   't-input': {
     component: TInput,
     props: {}

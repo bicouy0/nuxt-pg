@@ -13,14 +13,19 @@
       <div>
         <t-toggle />
       </div>
+      <test-para />
     </div>
   </section>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import TestPara from '~/components/TestPara.vue'
 
 export default Vue.extend({
+  components: {
+    TestPara
+  },
   methods: {
     pop () {
       // console.log('pop')
