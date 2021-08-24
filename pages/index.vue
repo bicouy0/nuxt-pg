@@ -5,6 +5,11 @@
         Welcome to your <span class="test"><span class="blop">Nuxt</span></span> Application
       </h2>
       <div class="pt-4">
+        <p class="py-2">
+          <nuxt-link :to="{name: 'cnt-slug', params: {slug: 'hello'}}">
+            go to hello content
+          </nuxt-link>
+        </p>
         <t-input type="text" />
         <t-button type="button" @click="pop">
           OK
