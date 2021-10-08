@@ -17,4 +17,4 @@ Learn how to fetch your content with `$content`: https://content.nuxtjs.org/fetc
 
 Learn how to display your Markdown content with the `<nuxt-content>` component directly in your template: https://content.nuxtjs.org/displaying.
 
-<nuxt-img format="webp" width="320" height="240" fit="inside" src="/islande.jpg"></nuxt-img>
+<img width="320" height="240" src="/islande.jpg"></img>
