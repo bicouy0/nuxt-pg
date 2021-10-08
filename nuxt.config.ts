@@ -52,7 +52,12 @@ const config: NuxtConfig = {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en'
+      lang: 'en',
+      name: 'Nuxt PG',
+      short_name: 'nuxt-pg',
+      display: 'standalone',
+      theme_color: '#cccccc',
+      background_color: '#cccccc',
     }
   },
 
