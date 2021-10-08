@@ -75,7 +75,7 @@ const config: NuxtConfig = {
   },
 
   oneSignal: {
-    cdn: true,
+    cdn: false,
     init: {
       appId: 'b181cac5-a4eb-4aa4-b4f9-55f35c13d488'
     }
