@@ -40,6 +40,7 @@ const config: NuxtConfig = {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
+    '@nuxtjs/onesignal',
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
@@ -67,6 +68,17 @@ const config: NuxtConfig = {
 
   tailwindcss: {
     cssPath: '~/assets/styles/tailwind.scss'
+  },
+
+  oneSignal: {
+    cdn: true,
+    init: {
+      appId: 'b181cac5-a4eb-4aa4-b4f9-55f35c13d488',
+      allowLocalhostAsSecureOrigin: true,
+      welcomeNotification: {
+          disable: true
+      }
+    }
   }
 }
 
