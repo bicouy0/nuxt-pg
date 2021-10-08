@@ -1,8 +1,12 @@
 import Vue from 'vue'
-import OneSignal from 'onesignal-web-sdk/src/OneSignal'
+
+interface Onesignal {
+  showNativePrompt(): Promise<void>
+  showSlidedownPrompt(): Promise<void>
+}
 
 declare module 'vue/types/vue' {
     interface Vue {
-        $OneSignal: typeof OneSignal;
+        $OneSignal: OneSignal;
     }
 }

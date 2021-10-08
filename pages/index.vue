@@ -14,6 +14,9 @@
         <t-button type="button" @click="pop">
           Notifications !
         </t-button>
+        <t-button type="button" @click="popSlide">
+          Notifications (slide) !
+        </t-button>
       </div>
       <div>
         <t-toggle />
@@ -36,8 +39,13 @@ export default Vue.extend({
       this.$OneSignal.push(async () => {
         await this.$OneSignal.showNativePrompt()
       })
-      // console.log('pop')
+    },
+    popSlide () {
+      this.$OneSignal.push(async () => {
+        await this.$OneSignal.showSlidedownPrompt()
+      })
     }
+
   }
 })
 </script>
