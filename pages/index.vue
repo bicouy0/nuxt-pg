@@ -33,9 +33,7 @@ export default Vue.extend({
   },
   methods: {
     pop () {
-      this.$OneSignal.push(() => {
-        this.$OneSignal.showNativePrompt();
-      });
+      this.$OneSignal.showNativePrompt();
       // console.log('pop')
     }
   }
