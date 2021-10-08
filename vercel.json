@@ -7,7 +7,13 @@
     },
     {
       "src": "nuxt.config.ts",
-      "use": "@nuxtjs/vercel-builder"
+      "use": "@nuxtjs/vercel-builder",
+      "config": {
+        "serverFiles": [
+          ".nuxt/content/**",
+          "content/**"
+        ]
+      }
     }
   ]
 }
