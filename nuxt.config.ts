@@ -57,7 +57,7 @@ const config: NuxtConfig = {
       short_name: 'nuxt-pg',
       display: 'standalone',
       theme_color: '#cccccc',
-      background_color: '#cccccc',
+      background_color: '#cccccc'
     }
   },
 
@@ -75,7 +75,7 @@ const config: NuxtConfig = {
   },
 
   oneSignal: {
-    cdn: false,
+    cdn: true,
     init: {
       appId: 'b181cac5-a4eb-4aa4-b4f9-55f35c13d488'
     }
