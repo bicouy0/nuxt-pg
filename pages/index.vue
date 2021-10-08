@@ -12,7 +12,7 @@
         </p>
         <t-input type="text" />
         <t-button type="button" @click="pop">
-          OK
+          Notifications !
         </t-button>
       </div>
       <div>
@@ -33,6 +33,9 @@ export default Vue.extend({
   },
   methods: {
     pop () {
+      this.$OneSignal.push(() => {
+        this.$OneSignal.showNativePrompt();
+      });
       // console.log('pop')
     }
   }
