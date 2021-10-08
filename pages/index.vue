@@ -35,17 +35,12 @@ export default Vue.extend({
     TestPara
   },
   methods: {
-    pop () {
-      this.$OneSignal.push(async () => {
-        await this.$OneSignal.showNativePrompt()
-      })
+    async pop () {
+      await this.$OneSignal.showNativePrompt()
     },
-    popSlide () {
-      this.$OneSignal.push(async () => {
-        await this.$OneSignal.showSlidedownPrompt()
-      })
+    async popSlide () {
+      await this.$OneSignal.showSlidedownPrompt()
     }
-
   }
 })
 </script>
